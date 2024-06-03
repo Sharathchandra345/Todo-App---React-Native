@@ -39,8 +39,8 @@ export default function App() {
   return (
     <TouchableWithoutFeedback
       onPress={() => {
-        Keyboard.dismiss();
         console.log("dismissed keyboard");
+        Keyboard.dismiss();
       }}
     >
       <View style={styles.container}>
@@ -64,12 +64,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#f8f8f8",
   },
   content: {
     padding: 40,
+    flex: 1,
   },
   list: {
+    flex: 1,
     marginTop: 20,
   },
 });
